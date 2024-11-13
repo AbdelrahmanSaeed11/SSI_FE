@@ -22,42 +22,86 @@
         <h2 class="title">تسجيل حساب جديد</h2>
 
         <div class="register-form-container">
-            <div class="default-input-container">
-                <label>الاسم</label>
-                <input type="text" required class="form-control">
+            <div class="form-group-row">
+                <div class="default-input-container">
+                    <label>الاسم</label>
+                    <input type="text" required class="form-control">
+                </div>
+
+                <div class="default-input-container">
+                    <label>المدينة</label>
+                    <select class="form-select">
+                        <option selected>اختار المدينة</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group-row">
+                <div class="default-input-container">
+                    <label>كلمة المرور</label>
+                    <input type="password" required class="form-control">
+                </div>
+
+                <div class="default-input-container">
+                    <label>تأكيد كلمة المرور</label>
+                    <input type="password" required class="form-control">
+                </div>
+            </div>
+            <div class="form-group-row">
+                <div class="default-input-container">
+                    <label>الهوية</label>
+                    <input type="text" required class="form-control">
+                </div>
+
+                <div class="default-input-container">
+                    <label>العنوان</label>
+                    <input type="text" required class="form-control">
+                </div>
             </div>
 
-            <div class="default-input-container">
-                <label>المدينة</label>
-                <select class="form-select">
-                    <option selected>اختار المدينة</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </select>
-            </div>
-
+            <!-- Phone number Normal state -->
             <div class="default-input-container">
                 <div class="phone-custom-lebel-group">
                     <label>جوال</label>
-                    <a class="confirm-phone-number-button">تأكيد رقم الجوال</a>
+                    <div>
+                        <a class="confirm-phone-number-button">تأكيد رقم الجوال</a>
+                    </div>
                 </div>
-                <input type="text" required class="form-control">
+                <div>
+                    <input type="text" required class="form-control">
+                </div>
             </div>
 
+            <!-- Phone number Loading state -->
             <div class="default-input-container">
-                <label>الهوية</label>
-                <input type="text" required class="form-control">
+                <div class="phone-custom-lebel-group">
+                    <label>جوال</label>
+                    <div>
+                        <a class="confirm-phone-number-button">تأكيد رقم الجوال</a>
+                        <div class="spinner-border" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required disabled class="form-control">
+                </div>
             </div>
 
+            <!-- Phone number Error state -->
             <div class="default-input-container">
-                <label>كلمة المرور</label>
-                <input type="password" required class="form-control">
-            </div>
-
-            <div class="default-input-container">
-                <label>تأكيد كلمة المرور</label>
-                <input type="password" required class="form-control">
+                <div class="phone-custom-lebel-group">
+                    <label>جوال</label>
+                    <div>
+                        <a class="confirm-phone-number-button">تأكيد رقم الجوال</a>
+                    </div>
+                </div>
+                <div>
+                    <input type="text" required class="form-control error">
+                    <p class="error">رقم الجوال مسجل سابقا في النظام</p>
+                </div>
             </div>
 
             <div class="default-input-container">
@@ -67,11 +111,6 @@
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                 </select>
-            </div>
-
-            <div class="default-input-container">
-                <label>العنوان</label>
-                <input type="text" required class="form-control">
             </div>
 
             <button type="submit" class="login-form-submit-button">دخول</button>
