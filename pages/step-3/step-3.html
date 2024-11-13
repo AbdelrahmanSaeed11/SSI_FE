@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title>Bootstrap demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS (RTL) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons (optional) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./step-3.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="auth-header-container">
+            <div class="dropdown">
+                <!-- Account Icon -->
+                <i class="bi bi-person-circle dropdown-toggle icon-button" id="accountDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 1.5rem;"></i>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu" aria-labelledby="accountDropdown">
+                    <li><a class="dropdown-item" href="#">تسجيل الخروج<i class="bi bi-box-arrow-in-left ms-2"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="logo-container">
+                <img src="https://ssi.startech.tech/assets1/img/11.png" alt="SSI-logo" class="logo-image">
+            </div>
+        </div>
+
+        <div class="select-program-container">
+            <div class="stepper-container">
+                <div class="step-container completed">
+                    <div class="step-header">
+                        <i class="bi bi-search"></i>
+                    </div>
+
+                    <div class="step-separator"></div>
+                </div>
+                <div class="step-container completed">
+                    <div class="step-header">
+                        <i class="bi bi-credit-card-fill"></i>
+                    </div>
+
+                    <div class="step-separator"></div>
+                </div>
+                <div class="step-container last-step active">
+                    <div class="step-header">
+                        <i class="bi bi-check2-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="right-side-wrapper">
+                    <h2 class="title">التأكيد عن طريق نفاذ</h2>
+
+                    <div class="form-wrapper">
+
+                        <div class="default-input-container">
+                            <label>رقم الهوية</label>
+                            <div>
+                                <div class="custom-input-group">
+                                    <input type="text" required disabled class="form-control">
+                                    <i class="bi bi-pencil-square"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="form-submit-button">التوثيق عن طريق نفاذ</button>
+                    </div>
+
+
+                    <div class="info-container">
+                        <p class="contacts-container">هل لديك مشكلة فى الدخول عبر تطبيق نفاذ؟ <a class="contants-number"
+                                href="tel:12345">تواصل معنا على الرقم 12345</a></p>
+
+                        <hr class="info-separator">
+
+                        <h2 class="info-title">بيانات البرنامج:</h2>
+                        <div class="info-details-wrapper">
+                            <p class="info-details">&bull; المبلغ المدفوع غير مسترد وفى حال الأنسحاب أو التأجيل عند بدء
+                                الدبلوم
+                                يتم سداد كامل الربع علما أن قيمة الربع التدريبى 5000 ريال</p>
+                            <p class="info-details">&bull; المبلغ المدفوع غير مسترد وفى حال الأنسحاب أو التأجيل عند بدء
+                                الدبلوم
+                                يتم سداد كامل الربع علما أن قيمة الربع التدريبى 5000 ريال</p>
+                            <p class="info-details">&bull; المبلغ المدفوع غير مسترد وفى حال الأنسحاب أو التأجيل عند بدء
+                                الدبلوم
+                                يتم سداد كامل الربع علما أن قيمة الربع التدريبى 5000 ريال</p>
+                        </div>
+
+                        <hr class="info-separator">
+
+                        <h2 class="info-title">تعليمات التدريب فى المؤسسة</h2>
+
+                        <div class="info-details-wrapper">
+                            <p class="info-details">&bull; المبلغ المدفوع غير مسترد وفى حال الأنسحاب أو التأجيل عند بدء
+                                الدبلوم
+                                يتم سداد كامل الربع علما أن قيمة الربع التدريبى 5000 ريال</p>
+                            <p class="info-details">&bull; المبلغ المدفوع غير مسترد وفى حال الأنسحاب أو التأجيل عند بدء
+                                الدبلوم
+                                يتم سداد كامل الربع علما أن قيمة الربع التدريبى 5000 ريال</p>
+                            <p class="info-details">&bull; المبلغ المدفوع غير مسترد وفى حال الأنسحاب أو التأجيل عند بدء
+                                الدبلوم
+                                يتم سداد كامل الربع علما أن قيمة الربع التدريبى 5000 ريال</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-image-container">
+                    <img src="./illustration.svg" alt="form-image" class="form-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
